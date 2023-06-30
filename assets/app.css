@@ -1,0 +1,25 @@
+.banner {
+    position: fixed;
+    width: 100%;
+    height: 60px; /* match the height in your Python styles */
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    margin-top: 60px; /* match the height of the banner */
+    height: calc(100vh - 60px); /* subtract the height of the banner from the height of the viewport */
+}
+
+.side-banner {
+    flex: 0.5;
+    overflow-y: auto; /* add a scrollbar if the content is too long */
+}
+
+.charts {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    overflow-y: auto; /* add a scrollbar if the content is too long */
+}
